@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mt-4"> <!-- Added mt-4 (margin-top: 4) for space -->
+    {% for movie in movies_list %}
+        {% if forloop.counter0|divisibleby:3 %}
+            <div class="row">
+        {% endif %}
+        <div class="col-md-4 mb-4">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="{{ movie.img.url }}" class="card-img-top" alt="" style="height: 450px; object-fit: cover;"> <!-- Added style to set height and object-fit for images -->
+                <div class="card-body">
+                    <h5 class="card-title">{{ movie.name }}</h5>
+                    <p class="card-text">{{ movie.desc }}</p>
+                    <a href="{% url 'movieapp:detail' movie.id %}" class="btn btn-warning">Details</a>
+                </div>
+            </div>
+        </div>
+        {% if forloop.last or forloop.counter3|divisibleby:3 %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

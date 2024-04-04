@@ -1,0 +1,36 @@
+body {
+    background-color: MidnightBlue; /* Set background color */
+    color: white; /* Set text color */
+    font-family: Arial, sans-serif; /* Set font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.container {
+    padding-top: 20px; /* Add padding to the top of the container */
+}
+
+.card {
+    background-color: #333; /* Set background color of cards */
+    color: white; /* Set text color of cards */
+    border-radius: 10px; /* Add border radius to cards */
+    margin-bottom: 20px; /* Add margin to the bottom of cards */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; /* Add border radius to top left corner of image */
+    border-top-right-radius: 10px; /* Add border radius to top right corner of image */
+}
+
+.card-body {
+    padding: 15px; /* Add padding to card body */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Increase font size of card title */
+    margin-bottom: 0.75rem; /* Add margin to the bottom of card title */
+}
+
+.card-text {
+    font-size: 1rem; /* Set font size of card text */
+}
